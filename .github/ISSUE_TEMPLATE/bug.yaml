@@ -1,0 +1,34 @@
+name: 报告BUG
+description: 对末影龙姐姐出现的BUG进行报告
+labels: [ "bug" ]
+
+body:
+  - type: textarea
+    id: command
+    attributes:
+      label: 发生BUG的指令
+    validations:
+      required: true
+
+  - type: textarea
+    id: expect
+    attributes:
+      label: 应该发生什么?
+      description: |
+        尽量详细说明
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际发生了什么?
+      description: |
+        尽量详细说明
+    validations:
+      required: true
+
+  - type: textarea
+    id: other
+    attributes:
+      label: 发生BUG的图片/其他补充说明 (可选)
